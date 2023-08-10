@@ -1,0 +1,28 @@
+{
+  "name": "versioning",
+  "version": "1.0.0",
+  "description": "PoC for auto-bumping version number and auto-generating changelog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-work:ewxabfw/versioning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitizen": "^4.3.0",
+    "husky": "^8.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
