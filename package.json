@@ -1,6 +1,6 @@
 {
   "name": "versioning",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "PoC for auto-bumping version number and auto-generating changelog",
   "main": "index.js",
   "scripts": {
