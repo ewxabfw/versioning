@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github-work/ewxabfw/versioning/compare/v1.1.0...v1.1.1) (2023-08-10)
+
+
+### Bug Fixes
+
+* updated readme again ([9c20cc2](https://github-work/ewxabfw/versioning/commit/9c20cc277fc2564929ff82797c43c396969af900))
+
 ## 1.1.0 (2023-08-10)
 
 
