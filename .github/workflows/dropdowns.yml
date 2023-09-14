@@ -21,8 +21,12 @@ on:
           - idb-template-new
       environment:
         description: 'Select Environment'
-        type: environment
+        # type: environment
         required: true
+        type: choice
+        options:
+          - DEV
+          - QA
 
 jobs:
   print-mfe:
