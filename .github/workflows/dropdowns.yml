@@ -1,0 +1,33 @@
+name: Select MFE and Env
+
+on:
+  workflow_dispatch:
+    inputs:
+      mfe:
+        description: 'Select MFE'
+        required: true
+        default: 'idb-host'
+        type: choice
+        options:
+          - idb-host
+          - idb-templates
+          - idb-documents-list
+          - idb-documents-details
+          - idb-documents-new
+          - idb-accounts
+          - idb-account-level-preferences
+          - idb-documents-consolidate
+          - idb-unit-price-calculation-preferences
+          - idb-template-new
+      environment:
+        description: 'Select Environment'
+        type: environment
+        required: true
+
+jobs:
+  print-mfe:
+    runs-on: ubuntu-latest
+    # if:  ${{ inputs.print_tags }} 
+    steps:
+      - name: Print the selected MFE and Env to STDOUT
+        run: echo  You selected MFE ${{ inputs.mfe }} on ${{ inputs.environment }}
